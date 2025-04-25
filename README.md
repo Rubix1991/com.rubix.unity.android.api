@@ -32,13 +32,14 @@ using var toast = Toast.MakeText(Activity.CurrentActivity,
 toast.Show();
 ```
 
-Without a wrapper, you would need to manually resolve class names and methods, and the above code would look like this:
+Without the wrappers, you would need to manually resolve class names and methods, and the above code would look like this:
 
 ```
 using UnityEngine.Android;
 ...
+
 using var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-using var currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity")
+using var currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
 using var toastClass = new AndroidJavaClass("android.widget.Toast");
 int lengthShort = toastClass.GetStatic<int>("LENGTH_SHORT");
 using var toast = toastClass.CallStatic<AndroidJavaObject>("makeText",
