@@ -1,16 +1,17 @@
 # Rubix C# wrappers for Android Java APIs for Unity
 
-This packages provides C# wrappers for Unity for [Android Java APIs](http://developer.android.com/reference).
-Under the hood, the package uses [AndroidJavaObject](https://docs.unity3d.com/ScriptReference/AndroidJavaObject.html) and [AndroidJavaProxy](https://docs.unity3d.com/ScriptReference/AndroidJavaProxy.html) for base functionality.
+This package provides C# wrappers for [Android Java APIs](http://developer.android.com/reference) for Unity. 
 
-You can find the full list of exposed APIs [here](/Docs~/ExposedApi.md).
+The wrappers makes the usage of Android APIs in Unity much much easier. You can find the full list of exposed APIs [here](/Docs~/ExposedApi.md).
+
+__Note: This is an experimental package, if you'll find a bug or a missing functionality, please report it. Thank you!__
 
 
 ## Requirements
 
 * Unity 6000.0.47f1 or higher 
 * Unity Android Support
-* __Note:__ Older Unity versions are missing required fixes for AndroidJavaObject.
+* __Note:__ Older Unity versions are not supported, because they're missing necessary fixes for AndroidJavaObject
 
 ## Samples
 
@@ -18,7 +19,9 @@ TODO
 
 ## Examples
 
-The following C# code shows a [toast](https://developer.android.com/guide/topics/ui/notifiers/toasts) and why the wrappers are useful.
+Under the hood, the package uses [AndroidJavaObject](https://docs.unity3d.com/ScriptReference/AndroidJavaObject.html) and [AndroidJavaProxy](https://docs.unity3d.com/ScriptReference/AndroidJavaProxy.html) for base functionality.
+
+The following C# code provides an example how to show a [toast](https://developer.android.com/guide/topics/ui/notifiers/toasts) and why the wrappers are useful.
 
 ```
 using Rubix.Unity.Android.Widget;
@@ -48,3 +51,5 @@ using var toast = toastClass.CallStatic<AndroidJavaObject>("makeText",
     lengthShort);
 toast.Call("show");
 ```
+
+As you see, with wrappers you write much less code for the same functionality.
