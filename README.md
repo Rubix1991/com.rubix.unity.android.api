@@ -1,11 +1,12 @@
 # Rubix C# wrappers for Android Java APIs for Unity
 
-This package provides C# wrappers for [Android Java APIs](http://developer.android.com/reference) for Unity. 
+This package provides C# wrappers for [Android Java APIs](http://developer.android.com/reference) for Unity. There are almost __~3000__ wrappers provided.
 
 The wrappers makes the usage of Android APIs in Unity much much easier. You can find the full list of exposed APIs [here](/Docs~/ExposedApi.md).
 
 __Note: This is an experimental package, if you'll find a bug or a missing functionality, please report it. Thank you!__
 
+__Note:__ Android API Level matches package's major version, see [package.json](/package.json).
 
 ## Requirements
 
@@ -13,9 +14,19 @@ __Note: This is an experimental package, if you'll find a bug or a missing funct
 * Unity Android Support
 * __Note:__ Older Unity versions are not supported, because they're missing necessary fixes for AndroidJavaObject
 
+## Installation
+
+* In Unity, go to Window->Package Manager
+* In top left corner click **+** button, choose **Install Package from git URL**
+* Enter
+
+```
+git@github.com:Rubix1991/com.rubix.unity.android.api.git#release/api-34
+```
+
 ## Samples
 
-TODO
+You can find the examples on how the wrappers are used in [this Unity project](https://github.com/Rubix1991/com.rubix.unity.android.api-examples). Simply clone the repo and open it in Unity.
 
 ## Examples
 

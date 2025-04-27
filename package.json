@@ -3,12 +3,12 @@
   "displayName": "Rubix Unity Android API",
   "version": "34.0.0",
   "unity": "6000.0",
-  "description": "Provides Unity C# wrappers for Android Java APIs",
+  "description": "Provides C# wrappers for Android Java APIs for Unity",
   "keywords": [
     "Unity",
     "Android",
     "Api",
-	"Java"
+    "Java"
   ],
   "dependencies": {
     "com.unity.modules.androidjni": "1.0.0"
