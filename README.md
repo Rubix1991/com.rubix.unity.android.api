@@ -21,7 +21,7 @@ __Note:__ Android API Level matches package's major version, see [package.json](
 * Enter
 
 ```
-git@github.com:Rubix1991/com.rubix.unity.android.api.git#release/api-34
+git@github.com:Rubix1991/com.rubix.unity.android.api.git#release/api-36
 ```
 
 ## Samples
