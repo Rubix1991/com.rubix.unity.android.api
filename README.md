@@ -10,6 +10,7 @@ __Note:__ Android API Level matches package's major version, see [package.json](
 
 ## Requirements
 
+* [Git](https://git-scm.com/install/)
 * Unity 6000.0.47f1 or higher 
 * Unity Android Support
 * __Note:__ Older Unity versions are not supported, because they're missing necessary fixes for AndroidJavaObject
