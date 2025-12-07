@@ -19,11 +19,15 @@ __Note:__ Android API Level matches package's major version, see [package.json](
 
 * In Unity, go to Window->Package Manager
 * In top left corner click **+** button, choose **Install Package from git URL**
-* Enter
+* Enter HTTPS url:
+    ```
+    https://github.com/Rubix1991/com.rubix.unity.android.api.git#release/api-36
+    ```
 
-```
-git@github.com:Rubix1991/com.rubix.unity.android.api.git#release/api-36
-```
+    or you can use SSH url:
+    ```
+    git@github.com:Rubix1991/com.rubix.unity.android.api.git#release/api-36
+    ```
 
 ## Samples
 
