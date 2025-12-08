@@ -22,7 +22,7 @@ __Note:__ Android API Level matches package's major version, see [package.json](
 * Enter
 
 ```
-git@github.com:Rubix1991/com.rubix.unity.android.api.git#release/api-34
+https://github.com/Rubix1991/com.rubix.unity.android.api.git#release/api-34
 ```
 
 ## Samples
@@ -65,3 +65,4 @@ toast.Call("show");
 ```
 
 As you see, with wrappers you write much less code for the same functionality.
+
